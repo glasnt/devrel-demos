@@ -1,7 +1,5 @@
 # Running {{ name }} on {{ platform }}
 
-<!--- Generated {{ now() }} -->
-
 To deploy a [{{ name}}]({{ homepage }}) application to {{ platform }}, you will need an application
 based on this framework. This demo gets you to use the {{ name}} template to generate one. 
 
@@ -10,6 +8,7 @@ This requires {% if
 {%- elif language == "python" %}[python3](https://cloud.google.com/python/docs/setup)
 {%- elif language == "go" %}[go](https://cloud.google.com/go/docs/setup)
 {%- elif language == "php" %}[php](https://www.php.net/manual/en/install.php)
+{%- elif language == "flutter" %}Flutter
 {%- elif language == "java" %}`java`
 {% endif %}{%
 if platform == "Cloud Run" %}, and [gcloud](https://cloud.google.com/sdk/docs/install).

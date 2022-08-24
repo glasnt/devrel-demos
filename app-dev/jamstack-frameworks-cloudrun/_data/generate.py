@@ -18,12 +18,8 @@ firebase_framework_list = []
 for config in frameworks:
     framework = config.stem
 
-
-    template.globals["now"] = datetime.datetime.utcnow
-
     with open(config) as f:
         data = yaml.safe_load(f.read())
-
 
     if "skip_cloudrun" not in data.keys():
         gcr_framework_list.append((data["name"], framework, data["language"]))
@@ -33,9 +29,10 @@ for config in frameworks:
     if "skip_firebase" not in data.keys():
 
         firebase_framework_list.append((data["name"], framework, data["language"]))
-        with open(f"../../jamstack-frameworks-firebase/{framework}/README.md", "w") as f:
+        with open(
+            f"../../jamstack-frameworks-firebase/{framework}/README.md", "w"
+        ) as f:
             f.write(template.render(**data, platform="Firebase"))
-
 
 
 with open("../README.md", "w") as f:

@@ -1,7 +1,5 @@
 # Running Preact on Cloud Run
 
-<!--- Generated 2022-08-24 06:52:10.089504 -->
-
 To deploy a [Preact](https://preactjs.com/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Preact template to generate one. 
 

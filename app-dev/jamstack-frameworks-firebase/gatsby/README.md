@@ -1,7 +1,5 @@
 # Running Gatsby on Firebase
 
-<!--- Generated 2022-08-24 06:52:10.070118 -->
-
 To deploy a [Gatsby](https://www.gatsbyjs.com/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Gatsby template to generate one. 
 

@@ -1,7 +1,5 @@
 # Running VueJS on Firebase
 
-<!--- Generated 2022-08-24 06:52:10.100687 -->
-
 To deploy a [VueJS](https://vuejs.org/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the VueJS template to generate one. 
 

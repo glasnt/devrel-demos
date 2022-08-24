@@ -1,7 +1,5 @@
 # Running Hugo on Cloud Run
 
-<!--- Generated 2022-08-24 06:52:10.072556 -->
-
 To deploy a [Hugo](https://gohugo.io) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Hugo template to generate one. 
 

@@ -1,7 +1,5 @@
 # Running MKDocs on Firebase
 
-<!--- Generated 2022-08-24 06:52:10.083199 -->
-
 To deploy a [MKDocs](https://www.mkdocs.org/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the MKDocs template to generate one. 
 
