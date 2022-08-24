@@ -1,6 +1,6 @@
 # Running VueJS on Cloud Run
 
-<!--- Generated 2022-08-24 06:26:55.806333 -->
+<!--- Generated 2022-08-24 06:28:16.977927 -->
 
 To deploy a [VueJS](https://vuejs.org/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the VueJS template to generate one. 

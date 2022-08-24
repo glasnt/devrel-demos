@@ -1,6 +1,6 @@
 # Running Angular on Firebase
 
-<!--- Generated 2022-08-24 06:26:55.773589 -->
+<!--- Generated 2022-08-24 06:28:16.938393 -->
 
 To deploy a [Angular](https://angular.io/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Angular template to generate one. 

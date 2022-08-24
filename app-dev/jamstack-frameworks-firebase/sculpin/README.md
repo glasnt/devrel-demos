@@ -1,6 +1,6 @@
 # Running Sculpin on Firebase
 
-<!--- Generated 2022-08-24 06:26:55.800786 -->
+<!--- Generated 2022-08-24 06:28:16.971478 -->
 
 To deploy a [Sculpin](https://sculpin.io) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Sculpin template to generate one. 

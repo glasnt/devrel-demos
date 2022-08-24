@@ -1,6 +1,6 @@
 # Running Express on Firebase
 
-<!--- Generated 2022-08-24 06:26:55.775276 -->
+<!--- Generated 2022-08-24 06:28:16.941323 -->
 
 To deploy a [Express](https://expressjs.com/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Express template to generate one. 

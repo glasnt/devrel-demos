@@ -1,6 +1,6 @@
 # Running NextJS on Cloud Run
 
-<!--- Generated 2022-08-24 06:26:55.789487 -->
+<!--- Generated 2022-08-24 06:28:16.962996 -->
 
 To deploy a [NextJS](https://nextjs.org/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the NextJS template to generate one. 

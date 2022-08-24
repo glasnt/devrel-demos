@@ -9,4 +9,21 @@ These examples use the template generator for each framework, and then run the b
 
 All frameworks are NodeJS based, unless otherwise marked.
 
-* [Angular](angular/) * [Express](express/) * [Flutter](flutter/) (flutter)* [Gatsby](gatsby/) * [Hugo](hugo/) (go)* [JBake](jbake/) (java)* [Jekyll](jekyll/) (ruby)* [Lektor](lektor/) (python)* [MKDocs](mkdocs/) (python)* [NextJS](nextjs/) * [Nuxtjs](nuxtjs/) * [Preact](preact/) * [React](react/) * [Sculpin](sculpin/) (php)* [Sphinx](sphinx/) (python)* [Svelte](svelte/) * [VueJS](vuejs/) 
+
+ * [Angular](angular/) 
+ * [Express](express/) 
+ * [Flutter](flutter/) (flutter)
+ * [Gatsby](gatsby/) 
+ * [Hugo](hugo/) (go)
+ * [JBake](jbake/) (java)
+ * [Jekyll](jekyll/) (ruby)
+ * [Lektor](lektor/) (python)
+ * [MKDocs](mkdocs/) (python)
+ * [NextJS](nextjs/) 
+ * [Nuxtjs](nuxtjs/) 
+ * [Preact](preact/) 
+ * [React](react/) 
+ * [Sculpin](sculpin/) (php)
+ * [Sphinx](sphinx/) (python)
+ * [Svelte](svelte/) 
+ * [VueJS](vuejs/) 
