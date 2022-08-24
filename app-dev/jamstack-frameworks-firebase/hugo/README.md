@@ -1,6 +1,6 @@
 # Running Hugo on Firebase
 
-<!--- Generated 2022-08-24 06:38:12.320282 -->
+<!--- Generated 2022-08-24 06:42:26.199507 -->
 
 To deploy a [Hugo](https://gohugo.io) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Hugo template to generate one. 
@@ -43,6 +43,8 @@ This requires [go](https://cloud.google.com/go/docs/setup), and [firebase](https
     ```bash
     hugo serve -D
     ```
+
+    
 
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 

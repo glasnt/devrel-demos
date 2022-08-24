@@ -1,6 +1,6 @@
 # Running Express on Cloud Run
 
-<!--- Generated 2022-08-24 06:38:12.312572 -->
+<!--- Generated 2022-08-24 06:42:26.192226 -->
 
 To deploy a [Express](https://expressjs.com/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Express template to generate one. 
@@ -28,6 +28,8 @@ This requires [node, npm](https://cloud.google.com/nodejs/docs/setup), and [gclo
     ```bash
     npm start
     ```
+
+    The site will be available at http://localhost:3000
 
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 

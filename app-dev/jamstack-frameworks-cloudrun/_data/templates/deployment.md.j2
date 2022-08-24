@@ -53,6 +53,8 @@ if platform == "Cloud Run" %}, and [gcloud](https://cloud.google.com/sdk/docs/in
     {{ run | indent(4) }}
     ```
 
+    {% if run_extra %}{{ run_extra }}{% endif %}
+
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 
 {% if platform == "Cloud Run" %}

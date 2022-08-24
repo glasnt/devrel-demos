@@ -1,6 +1,6 @@
 # Running Jekyll on Firebase
 
-<!--- Generated 2022-08-24 06:38:12.326451 -->
+<!--- Generated 2022-08-24 06:42:26.205457 -->
 
 To deploy a [Jekyll](https://jekyllrb.com/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Jekyll template to generate one. 
@@ -37,6 +37,8 @@ This requires , and [firebase](https://cloud.google.com/firestore/docs/client/ge
     ```bash
     bundle exec jekyll serve
     ```
+
+    
 
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 

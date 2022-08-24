@@ -1,6 +1,6 @@
 # Running Gatsby on Firebase
 
-<!--- Generated 2022-08-24 06:38:12.317354 -->
+<!--- Generated 2022-08-24 06:42:26.197096 -->
 
 To deploy a [Gatsby](https://www.gatsbyjs.com/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Gatsby template to generate one. 
@@ -33,6 +33,8 @@ This requires [node, npm](https://cloud.google.com/nodejs/docs/setup), and [fire
     ```bash
     npm run develop
     ```
+
+    
 
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 

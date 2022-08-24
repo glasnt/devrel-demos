@@ -1,6 +1,6 @@
 # Running MKDocs on Cloud Run
 
-<!--- Generated 2022-08-24 06:38:12.330694 -->
+<!--- Generated 2022-08-24 06:42:26.211080 -->
 
 To deploy a [MKDocs](https://www.mkdocs.org/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the MKDocs template to generate one. 
@@ -37,6 +37,8 @@ This requires [python3](https://cloud.google.com/python/docs/setup), and [gcloud
     ```bash
     mkdocs serve
     ```
+
+    
 
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 

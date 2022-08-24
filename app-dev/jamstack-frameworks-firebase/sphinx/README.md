@@ -1,6 +1,6 @@
 # Running Sphinx on Firebase
 
-<!--- Generated 2022-08-24 06:38:12.344108 -->
+<!--- Generated 2022-08-24 06:42:26.226173 -->
 
 To deploy a [Sphinx](https://www.sphinx-doc.org) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Sphinx template to generate one. 
@@ -39,6 +39,8 @@ This requires [python3](https://cloud.google.com/python/docs/setup), and [fireba
     ```bash
     sphinx-autobuild . _build
     ```
+
+    
 
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 

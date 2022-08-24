@@ -1,6 +1,6 @@
 # Running Sphinx on Cloud Run
 
-<!--- Generated 2022-08-24 06:38:12.343857 -->
+<!--- Generated 2022-08-24 06:42:26.225855 -->
 
 To deploy a [Sphinx](https://www.sphinx-doc.org) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Sphinx template to generate one. 
@@ -39,6 +39,8 @@ This requires [python3](https://cloud.google.com/python/docs/setup), and [gcloud
     ```bash
     sphinx-autobuild . _build
     ```
+
+    
 
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 

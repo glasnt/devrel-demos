@@ -1,6 +1,6 @@
 # Running Svelte on Cloud Run
 
-<!--- Generated 2022-08-24 06:38:12.345910 -->
+<!--- Generated 2022-08-24 06:42:26.228104 -->
 
 To deploy a [Svelte](https://svelte.dev/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Svelte template to generate one. 
@@ -37,6 +37,8 @@ This requires [node, npm](https://cloud.google.com/nodejs/docs/setup), and [gclo
     ```bash
     npm run dev
     ```
+
+    
 
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 

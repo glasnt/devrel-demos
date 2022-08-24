@@ -1,6 +1,6 @@
 # Running Angular on Firebase
 
-<!--- Generated 2022-08-24 06:38:12.310828 -->
+<!--- Generated 2022-08-24 06:42:26.190901 -->
 
 To deploy a [Angular](https://angular.io/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Angular template to generate one. 
@@ -37,6 +37,8 @@ This requires [node, npm](https://cloud.google.com/nodejs/docs/setup), and [fire
     ```bash
     ng serve --open
     ```
+
+    
 
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 

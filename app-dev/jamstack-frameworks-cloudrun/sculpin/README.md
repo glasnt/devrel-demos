@@ -1,6 +1,6 @@
 # Running Sculpin on Cloud Run
 
-<!--- Generated 2022-08-24 06:38:12.341624 -->
+<!--- Generated 2022-08-24 06:42:26.223426 -->
 
 To deploy a [Sculpin](https://sculpin.io) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Sculpin template to generate one. 
@@ -33,6 +33,8 @@ This requires [php](https://www.php.net/manual/en/install.php), and [gcloud](htt
     ```bash
     vendor/bin/sculpin generate --watch --server
     ```
+
+    
 
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 

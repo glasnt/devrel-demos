@@ -1,6 +1,6 @@
 # Running Preact on Cloud Run
 
-<!--- Generated 2022-08-24 06:38:12.337480 -->
+<!--- Generated 2022-08-24 06:42:26.218813 -->
 
 To deploy a [Preact](https://preactjs.com/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Preact template to generate one. 
@@ -31,6 +31,8 @@ This requires [node, npm](https://cloud.google.com/nodejs/docs/setup), and [gclo
     ```bash
     npm run dev
     ```
+
+    
 
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 

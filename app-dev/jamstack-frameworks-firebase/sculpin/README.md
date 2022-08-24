@@ -1,6 +1,6 @@
 # Running Sculpin on Firebase
 
-<!--- Generated 2022-08-24 06:38:12.341861 -->
+<!--- Generated 2022-08-24 06:42:26.223741 -->
 
 To deploy a [Sculpin](https://sculpin.io) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Sculpin template to generate one. 
@@ -33,6 +33,8 @@ This requires [php](https://www.php.net/manual/en/install.php), and [firebase](h
     ```bash
     vendor/bin/sculpin generate --watch --server
     ```
+
+    
 
     Enter `Ctrl+C` or `CMD+C` to stop the process.
 
