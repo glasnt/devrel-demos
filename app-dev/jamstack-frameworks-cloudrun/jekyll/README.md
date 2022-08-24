@@ -1,6 +1,6 @@
 # Running Jekyll on Cloud Run
 
-<!--- Generated 2022-08-24 05:40:58.831564 -->
+<!--- Generated 2022-08-24 06:26:55.783974 -->
 
 To deploy a [Jekyll](https://jekyllrb.com/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Jekyll template to generate one. 
@@ -60,7 +60,6 @@ For ruby applications, you can specify what you want the web process to run usin
 
 
 
-
 ## Deploy to Cloud Run
 
 * Build and deploy the service to Cloud Run: 
@@ -78,6 +77,10 @@ For ruby applications, you can specify what you want the web process to run usin
 Your service will now be deployed at the URL in the deployment output.
 
 ![Example Jekyll deployment](example.png)
+
+
+
+
 
 ## Learn more
 

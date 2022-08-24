@@ -1,6 +1,6 @@
 # Running Svelte on Cloud Run
 
-<!--- Generated 2022-08-24 05:40:58.853280 -->
+<!--- Generated 2022-08-24 06:26:55.804489 -->
 
 To deploy a [Svelte](https://svelte.dev/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Svelte template to generate one. 
@@ -63,7 +63,6 @@ You can override this using a `Procfile`.
 
 
 
-
 ## Deploy to Cloud Run
 
 * Build and deploy the service to Cloud Run: 
@@ -81,6 +80,10 @@ You can override this using a `Procfile`.
 Your service will now be deployed at the URL in the deployment output.
 
 ![Example Svelte deployment](example.png)
+
+
+
+
 
 ## Learn more
 

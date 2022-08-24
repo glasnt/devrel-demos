@@ -1,6 +1,6 @@
 # Running JBake on Cloud Run
 
-<!--- Generated 2022-08-24 05:40:58.826863 -->
+<!--- Generated 2022-08-24 06:26:55.781888 -->
 
 To deploy a [JBake](https://jbake.org/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the JBake template to generate one. 
@@ -59,7 +59,6 @@ For java applications, you can specify what you want the web process to run usin
 
 
 
-
 ## Deploy to Cloud Run
 
 * Build and deploy the service to Cloud Run: 
@@ -77,6 +76,10 @@ For java applications, you can specify what you want the web process to run usin
 Your service will now be deployed at the URL in the deployment output.
 
 ![Example JBake deployment](example.png)
+
+
+
+
 
 ## Learn more
 

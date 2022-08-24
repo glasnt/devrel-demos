@@ -1,124 +1,14 @@
-# Running {{ name }} on Cloud Run
 
-<!--- Generated {{ now() }} -->
+# Cloud Run Jamstack Examples
 
-To deploy a [{{ name}}]({{ homepage }}) application to Cloud Run, you will need an application
-based on this framework. This demo gets you to use the {{ name}} template to generate one. 
+This demo shows an example of how to deploy some of the popular [Node frameworks](https://jamstack.org/survey/2021/#choices-frameworks) to Cloud Run. 
 
-This requires {% if 
-         language == "node" %}[node, npm](https://cloud.google.com/nodejs/docs/setup)
-{%- elif language == "python" %}[python3](https://cloud.google.com/python/docs/setup)
-{%- elif language == "go" %}[go](https://cloud.google.com/go/docs/setup)
-{%- elif language == "php" %}[php](https://www.php.net/manual/en/install.php)
-{%- elif language == "java" %}`java`
-{% endif %}, and [gcloud](https://cloud.google.com/sdk/docs/install). 
+These examples use the template generator for each framework, and use the provided app runner to serve the examples in a container. For examples of how to host the built versions of these frameworks, see their [Firebase example](../nodejs-frameworks-firebase).
 
-### Create template application
+## Example Frameworks
 
-{% if generate %}
-* Install the framework:
+All frameworks are NodeJS based, unless otherwise marked.
 
-    ```bash
-    {{ install | indent(4) }}
-    ```
-
-* Create a new template application:
-
-    ```bash
-    {{ generate | indent(4) }}
-    ```
-
-{% else %}
-* Generate a new template application: 
-
-    ```bash
-    {{ install | indent(4)  }}
-    ```
-
-{% endif %}
-
-{% if "cd helloworld" not in generate %}
-* Navigate to the created project:
-
-    ```bash
-    cd helloworld/
-    ```
-{% endif %}
-* Run the application locally:
-
-    ```bash
-    {{ run | indent(4) }}
-    ```
-
-    Enter `Ctrl+C` or `CMD+C` to stop the process.
-
-
-## Configure for Cloud Run
-
-Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks), 
-the base language is automatically identified.
-
-{% if language == "node" %}
-For Node applications, it will automatically run `npm start` as the entrypoint if no other command is defined. 
-
-{% if run == "npm start" %}
-Because this is a default for {{ name }}, no additional configuration is required.
-{% else %}
-
-You can override this using a `Procfile`. 
-
-* Create a new file called `Procfile` with the following contents: 
-
-    ```
-    web: {{ run }}
-    ```
-{% endif %}
-{% else %}
-
-For {{language}} applications, you can specify what you want the web process to run using a `Procfile`. 
-
-* Create a new file called `Procfile` with the following contents: 
-
-    ```
-    web: {{ run }}
-    ```
-
-{% endif %}
-
-{% if ignore_gcloud %}
-* To ensure the Cloud Run deployment doesn't ignore {{ name }}'s hidden folder, make sure it's 
-explicitly included: 
-
-    ```bash
-    echo "{{ignore_gcloud}}" >> .gcloudignore
-    ```
-{% endif %}
-
-
-
-## Deploy to Cloud Run
-
-* Build and deploy the service to Cloud Run: 
-
-
-    ```bash
-    gcloud run deploy {{ name.lower() }}-helloworld \
-        --source . \
-        --allow-unauthenticated {% if deploy_extra %}\
-        {{deploy}}{%endif%}
-    ```
-
-    Type "Y" for all suggested operations.
-
-
-Your service will now be deployed at the URL in the deployment output.
-
-![Example {{ name }} deployment](example.png)
-
-## Learn more
-
-Resources: 
-
-{% for link in resources -%}
-  - {{ link }}
-{% endfor %}
+{% for name, link, language in frameworks %}
+ * [{{ name }}]({{ link }}/) {% if language != "node" %}({{language}}){%endif%}
+{%- endfor %}

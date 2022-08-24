@@ -1,6 +1,6 @@
 # Running Hugo on Cloud Run
 
-<!--- Generated 2022-08-24 05:40:58.822650 -->
+<!--- Generated 2022-08-24 06:26:55.779772 -->
 
 To deploy a [Hugo](https://gohugo.io) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Hugo template to generate one. 
@@ -66,7 +66,6 @@ For go applications, you can specify what you want the web process to run using 
 
 
 
-
 ## Deploy to Cloud Run
 
 * Build and deploy the service to Cloud Run: 
@@ -84,6 +83,10 @@ For go applications, you can specify what you want the web process to run using 
 Your service will now be deployed at the URL in the deployment output.
 
 ![Example Hugo deployment](example.png)
+
+
+
+
 
 ## Learn more
 

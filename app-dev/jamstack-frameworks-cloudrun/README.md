@@ -1,5 +1,5 @@
 
-# Cloud Run NodeJS and Jamstack Examples
+# Cloud Run Jamstack Examples
 
 This demo shows an example of how to deploy some of the popular [Node frameworks](https://jamstack.org/survey/2021/#choices-frameworks) to Cloud Run. 
 
@@ -7,21 +7,23 @@ These examples use the template generator for each framework, and use the provid
 
 ## Example Frameworks
 
-All frameworks are NodeJS based, unless otehrwise marked.
+All frameworks are NodeJS based, unless otherwise marked.
 
- * [Angular](angular)
- * [Express](express)
- * [Gatsby](gatsby)
- * [Hugo](hugo) (go)
- * [JBake](jbake) (java)
- * [Jekyll](jekyll) (ruby)
- * [Lektor](lektor) (python)
- * [MKDocs](mkdocs) (python)
- * [NextJS](nextjs)
- * [Nuxtjs](nuxtjs)
- * [Preact](preact)
- * [React](react)
- * [Sculpin](sculpin) (php)
- * [Sphinx](sphinx) (python)
- * [Svelte](svelte)
- * [VueJS](vuejs)
+
+ * [Angular](angular/) 
+ * [Express](express/) 
+ * [Flutter](flutter/) (flutter)
+ * [Gatsby](gatsby/) 
+ * [Hugo](hugo/) (go)
+ * [JBake](jbake/) (java)
+ * [Jekyll](jekyll/) (ruby)
+ * [Lektor](lektor/) (python)
+ * [MKDocs](mkdocs/) (python)
+ * [NextJS](nextjs/) 
+ * [Nuxtjs](nuxtjs/) 
+ * [Preact](preact/) 
+ * [React](react/) 
+ * [Sculpin](sculpin/) (php)
+ * [Sphinx](sphinx/) (python)
+ * [Svelte](svelte/) 
+ * [VueJS](vuejs/) 

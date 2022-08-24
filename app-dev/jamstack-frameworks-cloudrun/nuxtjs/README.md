@@ -1,6 +1,6 @@
 # Running Nuxtjs on Cloud Run
 
-<!--- Generated 2022-08-24 05:40:58.843060 -->
+<!--- Generated 2022-08-24 06:26:55.791329 -->
 
 To deploy a [Nuxtjs](https://nuxtjs.org/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Nuxtjs template to generate one. 
@@ -66,7 +66,6 @@ explicitly included:
 
 
 
-
 ## Deploy to Cloud Run
 
 * Build and deploy the service to Cloud Run: 
@@ -85,6 +84,10 @@ explicitly included:
 Your service will now be deployed at the URL in the deployment output.
 
 ![Example Nuxtjs deployment](example.png)
+
+
+
+
 
 ## Learn more
 
