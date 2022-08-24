@@ -1,6 +1,6 @@
 # Running MKDocs on Cloud Run
 
-<!--- Generated 2022-08-24 05:34:09.486811 -->
+<!--- Generated 2022-08-24 05:40:58.837584 -->
 
 To deploy a [MKDocs](https://www.mkdocs.org/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the MKDocs template to generate one. 
@@ -47,7 +47,7 @@ the base language is automatically identified.
 
 
 
-For python applications, you have specify what you want the web process to run using a `Procfile`. 
+For python applications, you can specify what you want the web process to run using a `Procfile`. 
 
 * Create a new file called `Procfile` with the following contents: 
 

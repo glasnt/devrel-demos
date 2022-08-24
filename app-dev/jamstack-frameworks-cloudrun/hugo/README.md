@@ -1,6 +1,6 @@
 # Running Hugo on Cloud Run
 
-<!--- Generated 2022-08-24 05:34:09.480817 -->
+<!--- Generated 2022-08-24 05:40:58.822650 -->
 
 To deploy a [Hugo](https://gohugo.io) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Hugo template to generate one. 
@@ -13,7 +13,8 @@ This requires [go](https://cloud.google.com/go/docs/setup), and [gcloud](https:/
 * Install the framework:
 
     ```bash
-    https://gohugo.io/getting-started/installing
+    # https://gohugo.io/getting-started/installing
+
     ```
 
 * Create a new template application:
@@ -52,7 +53,7 @@ the base language is automatically identified.
 
 
 
-For go applications, you have specify what you want the web process to run using a `Procfile`. 
+For go applications, you can specify what you want the web process to run using a `Procfile`. 
 
 * Create a new file called `Procfile` with the following contents: 
 

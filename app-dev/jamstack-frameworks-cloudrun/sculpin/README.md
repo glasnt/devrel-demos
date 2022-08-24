@@ -1,11 +1,11 @@
 # Running Sculpin on Cloud Run
 
-<!--- Generated 2022-08-24 05:34:09.494266 -->
+<!--- Generated 2022-08-24 05:40:58.849751 -->
 
 To deploy a [Sculpin](https://sculpin.io) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Sculpin template to generate one. 
 
-This requires , and [gcloud](https://cloud.google.com/sdk/docs/install). 
+This requires [php](https://www.php.net/manual/en/install.php), and [gcloud](https://cloud.google.com/sdk/docs/install). 
 
 ### Create template application
 
@@ -43,7 +43,7 @@ the base language is automatically identified.
 
 
 
-For php applications, you have specify what you want the web process to run using a `Procfile`. 
+For php applications, you can specify what you want the web process to run using a `Procfile`. 
 
 * Create a new file called `Procfile` with the following contents: 
 

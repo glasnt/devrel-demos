@@ -5,7 +5,7 @@ install:  |
   curl -s "https://get.sdkman.io" | bash
   sdk install jbake
 generate: |
-  kdir helloworld && cd helloworld
+  mkdir helloworld && cd helloworld
   jbake -i
 run: jbake -b -s
 build: jbake -b 

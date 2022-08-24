@@ -1,6 +1,6 @@
 # Running Jekyll on Cloud Run
 
-<!--- Generated 2022-08-24 05:34:09.483992 -->
+<!--- Generated 2022-08-24 05:40:58.831564 -->
 
 To deploy a [Jekyll](https://jekyllrb.com/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Jekyll template to generate one. 
@@ -47,7 +47,7 @@ the base language is automatically identified.
 
 
 
-For ruby applications, you have specify what you want the web process to run using a `Procfile`. 
+For ruby applications, you can specify what you want the web process to run using a `Procfile`. 
 
 * Create a new file called `Procfile` with the following contents: 
 

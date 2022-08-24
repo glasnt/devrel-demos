@@ -1,6 +1,6 @@
 # Running Express on Cloud Run
 
-<!--- Generated 2022-08-24 05:34:09.475821 -->
+<!--- Generated 2022-08-24 05:40:58.795776 -->
 
 To deploy a [Express](https://expressjs.com/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Express template to generate one. 

@@ -1,13 +1,11 @@
 name: Sphinx
 homepage: https://www.sphinx-doc.org
 language: python
-install: pip install sphinx
+install: pip install sphinx sphinx-autobuild
 generate: |
   sphinx-quickstart helloworld
   # enter prompted information, accepting defaults.
-run: | 
-  pip install sphinx-autobuild
-  sphinx-autobuild . _build
+run: sphinx-autobuild . _build
 build: make html
 output: _build/html
 resources: 

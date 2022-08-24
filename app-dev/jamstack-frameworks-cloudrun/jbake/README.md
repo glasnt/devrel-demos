@@ -1,11 +1,12 @@
 # Running JBake on Cloud Run
 
-<!--- Generated 2022-08-24 05:34:09.482475 -->
+<!--- Generated 2022-08-24 05:40:58.826863 -->
 
 To deploy a [JBake](https://jbake.org/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the JBake template to generate one. 
 
-This requires , and [gcloud](https://cloud.google.com/sdk/docs/install). 
+This requires `java`
+, and [gcloud](https://cloud.google.com/sdk/docs/install). 
 
 ### Create template application
 
@@ -21,7 +22,7 @@ This requires , and [gcloud](https://cloud.google.com/sdk/docs/install).
 * Create a new template application:
 
     ```bash
-    kdir helloworld && cd helloworld
+    mkdir helloworld && cd helloworld
     jbake -i
 
     ```
@@ -45,7 +46,7 @@ the base language is automatically identified.
 
 
 
-For java applications, you have specify what you want the web process to run using a `Procfile`. 
+For java applications, you can specify what you want the web process to run using a `Procfile`. 
 
 * Create a new file called `Procfile` with the following contents: 
 

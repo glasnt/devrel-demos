@@ -1,7 +1,8 @@
 name: Hugo
 language: go
 homepage: https://gohugo.io
-install: https://gohugo.io/getting-started/installing
+install: | 
+  # https://gohugo.io/getting-started/installing
 generate: |
   hugo new site helloworld
   hugo new posts/hello.md

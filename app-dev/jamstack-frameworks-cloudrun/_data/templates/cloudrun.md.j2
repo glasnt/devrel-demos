@@ -9,7 +9,8 @@ This requires {% if
          language == "node" %}[node, npm](https://cloud.google.com/nodejs/docs/setup)
 {%- elif language == "python" %}[python3](https://cloud.google.com/python/docs/setup)
 {%- elif language == "go" %}[go](https://cloud.google.com/go/docs/setup)
-{%- elif language == "flutter" %}`flutter`
+{%- elif language == "php" %}[php](https://www.php.net/manual/en/install.php)
+{%- elif language == "java" %}`java`
 {% endif %}, and [gcloud](https://cloud.google.com/sdk/docs/install). 
 
 ### Create template application
@@ -74,7 +75,7 @@ You can override this using a `Procfile`.
 {% endif %}
 {% else %}
 
-For {{language}} applications, you have specify what you want the web process to run using a `Procfile`. 
+For {{language}} applications, you can specify what you want the web process to run using a `Procfile`. 
 
 * Create a new file called `Procfile` with the following contents: 
 
@@ -85,7 +86,7 @@ For {{language}} applications, you have specify what you want the web process to
 {% endif %}
 
 {% if ignore_gcloud %}
-To ensure the Cloud Run deployment doesn't ignore {{ name }}'s hidden folder, make sure it's 
+* To ensure the Cloud Run deployment doesn't ignore {{ name }}'s hidden folder, make sure it's 
 explicitly included: 
 
     ```bash
