@@ -1,6 +1,6 @@
 # Running React on Cloud Run
 
-<!--- Generated 2022-08-24 06:42:26.221003 -->
+<!--- Generated 2022-08-24 06:43:53.364058 -->
 
 To deploy a [React](https://reactjs.org/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the React template to generate one. 

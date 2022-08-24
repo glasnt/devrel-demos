@@ -1,6 +1,6 @@
 # Running Svelte on Firebase
 
-<!--- Generated 2022-08-24 06:42:26.228374 -->
+<!--- Generated 2022-08-24 06:43:53.371884 -->
 
 To deploy a [Svelte](https://svelte.dev/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Svelte template to generate one. 

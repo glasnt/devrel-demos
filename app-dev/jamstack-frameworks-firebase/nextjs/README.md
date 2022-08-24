@@ -1,6 +1,6 @@
 # Running NextJS on Firebase
 
-<!--- Generated 2022-08-24 06:42:26.214210 -->
+<!--- Generated 2022-08-24 06:43:53.356982 -->
 
 To deploy a [NextJS](https://nextjs.org/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the NextJS template to generate one. 

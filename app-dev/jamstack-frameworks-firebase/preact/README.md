@@ -1,6 +1,6 @@
 # Running Preact on Firebase
 
-<!--- Generated 2022-08-24 06:42:26.219114 -->
+<!--- Generated 2022-08-24 06:43:53.362368 -->
 
 To deploy a [Preact](https://preactjs.com/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Preact template to generate one. 

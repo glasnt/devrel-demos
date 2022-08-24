@@ -1,6 +1,6 @@
 # Running Lektor on Cloud Run
 
-<!--- Generated 2022-08-24 06:42:26.208012 -->
+<!--- Generated 2022-08-24 06:43:53.351235 -->
 
 To deploy a [Lektor](https://www.getlektor.com) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Lektor template to generate one. 
