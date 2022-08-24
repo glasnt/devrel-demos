@@ -1,11 +1,12 @@
 # Running Lektor on Cloud Run
 
-<!--- Generated 2022-08-24 06:28:16.958081 -->
+<!--- Generated 2022-08-24 06:38:12.328294 -->
 
 To deploy a [Lektor](https://www.getlektor.com) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Lektor template to generate one. 
 
-This requires [python3](https://cloud.google.com/python/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install). 
+This requires [python3](https://cloud.google.com/python/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install).
+
 
 ### Create template application
 

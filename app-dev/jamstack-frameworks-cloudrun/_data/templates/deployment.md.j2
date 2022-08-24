@@ -11,7 +11,10 @@ This requires {% if
 {%- elif language == "go" %}[go](https://cloud.google.com/go/docs/setup)
 {%- elif language == "php" %}[php](https://www.php.net/manual/en/install.php)
 {%- elif language == "java" %}`java`
-{% endif %}, and [gcloud](https://cloud.google.com/sdk/docs/install). 
+{% endif %}{%
+if platform == "Cloud Run" %}, and [gcloud](https://cloud.google.com/sdk/docs/install).
+{%elif platform == "Firebase"%}, and [firebase](https://cloud.google.com/firestore/docs/client/get-firebase).
+{%endif%}
 
 ### Create template application
 
@@ -37,7 +40,7 @@ This requires {% if
 
 {% endif %}
 
-{% if "cd helloworld" not in generate %}
+{% if "cd helloworld" not in install %}
 * Navigate to the created project:
 
     ```bash

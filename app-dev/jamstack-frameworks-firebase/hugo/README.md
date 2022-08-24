@@ -1,11 +1,12 @@
 # Running Hugo on Firebase
 
-<!--- Generated 2022-08-24 06:28:16.950219 -->
+<!--- Generated 2022-08-24 06:38:12.320282 -->
 
 To deploy a [Hugo](https://gohugo.io) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Hugo template to generate one. 
 
-This requires [go](https://cloud.google.com/go/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install). 
+This requires [go](https://cloud.google.com/go/docs/setup), and [firebase](https://cloud.google.com/firestore/docs/client/get-firebase).
+
 
 ### Create template application
 

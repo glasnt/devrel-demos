@@ -1,11 +1,12 @@
 # Running Jekyll on Firebase
 
-<!--- Generated 2022-08-24 06:28:16.956105 -->
+<!--- Generated 2022-08-24 06:38:12.326451 -->
 
 To deploy a [Jekyll](https://jekyllrb.com/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Jekyll template to generate one. 
 
-This requires , and [gcloud](https://cloud.google.com/sdk/docs/install). 
+This requires , and [firebase](https://cloud.google.com/firestore/docs/client/get-firebase).
+
 
 ### Create template application
 

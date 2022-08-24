@@ -1,12 +1,13 @@
 # Running JBake on Firebase
 
-<!--- Generated 2022-08-24 06:28:16.953080 -->
+<!--- Generated 2022-08-24 06:38:12.322962 -->
 
 To deploy a [JBake](https://jbake.org/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the JBake template to generate one. 
 
 This requires `java`
-, and [gcloud](https://cloud.google.com/sdk/docs/install). 
+, and [firebase](https://cloud.google.com/firestore/docs/client/get-firebase).
+
 
 ### Create template application
 
@@ -29,6 +30,12 @@ This requires `java`
 
 
 
+
+* Navigate to the created project:
+
+    ```bash
+    cd helloworld/
+    ```
 
 * Run the application locally:
 

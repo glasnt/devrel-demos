@@ -1,11 +1,12 @@
 # Running Lektor on Firebase
 
-<!--- Generated 2022-08-24 06:28:16.958556 -->
+<!--- Generated 2022-08-24 06:38:12.328752 -->
 
 To deploy a [Lektor](https://www.getlektor.com) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Lektor template to generate one. 
 
-This requires [python3](https://cloud.google.com/python/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install). 
+This requires [python3](https://cloud.google.com/python/docs/setup), and [firebase](https://cloud.google.com/firestore/docs/client/get-firebase).
+
 
 ### Create template application
 

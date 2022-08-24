@@ -1,11 +1,12 @@
 # Running MKDocs on Firebase
 
-<!--- Generated 2022-08-24 06:28:16.961124 -->
+<!--- Generated 2022-08-24 06:38:12.331103 -->
 
 To deploy a [MKDocs](https://www.mkdocs.org/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the MKDocs template to generate one. 
 
-This requires [python3](https://cloud.google.com/python/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install). 
+This requires [python3](https://cloud.google.com/python/docs/setup), and [firebase](https://cloud.google.com/firestore/docs/client/get-firebase).
+
 
 ### Create template application
 
