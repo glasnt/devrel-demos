@@ -1,0 +1,11 @@
+name: Angular
+language: node
+homepage: https://angular.io/
+install: npm install -g @angular/cli
+generate: ng new helloworld
+run: ng serve --open
+build: ng build
+output: dist/helloworld
+resources: 
+ - https://angular.io/tutorial/toh-pt0
+ - https://angular.io/start/start-deployment 

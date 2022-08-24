@@ -1,0 +1,16 @@
+name: nuxtjs
+homepage: https://nuxtjs.org/
+language: node
+install:  | 
+  npx create-nuxt-app helloworld
+  # Choose defaults for all options, including "Deployment Target" (which will be "Server (Node.js hosting)")
+run: npm run dev
+build: npm run build
+output: .
+resources: 
+  - https://nuxtjs.org/docs/get-started/installation
+  - https://nuxtjs.org/docs/get-started/commands
+
+
+ignore_gcloud: '\!.next/'
+deploy_extra: --port 3000 --set-env-vars HOST=0.0.0.0

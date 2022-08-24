@@ -1,0 +1,11 @@
+name: jekyll
+homepage: https://jekyllrb.com/
+language: ruby
+install: gem install bundler jekyll
+generate: jekyll new helloworld
+run: bundle exec jekyll serve
+build: bundle exec jekyll build
+output: _site
+resources: 
+ - https://jekyllrb.com/docs/
+ - https://jekyllrb.com/docs/usage/ 

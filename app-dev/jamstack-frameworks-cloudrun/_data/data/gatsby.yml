@@ -1,0 +1,12 @@
+name: gatsby
+language: node
+homepage: https://www.gatsbyjs.com/
+install: | 
+  npm init gatsby
+  # Use "helloworld" for the project, enter for all other defaults, don't install any extras.
+run: npm run develop
+build: npm run build
+output: public
+resources: 
+ - https://www.gatsbyjs.com/docs/quick-start/
+ - https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting#additional

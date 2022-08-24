@@ -1,0 +1,13 @@
+name: nextjs
+language: node
+homepage: https://nextjs.org/
+install: npx create-next-app@latest helloworld
+run: npm run dev
+build: npm run build
+output: .
+resources: 
+ - https://nextjs.org/learn/basics/create-nextjs-app/setup
+ - https://cloud.google.com/sdk/gcloud/reference/topic/gcloudignore 
+
+
+ignore_gcloud: '\!.next/'

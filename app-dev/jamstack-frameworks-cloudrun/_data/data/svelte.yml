@@ -1,0 +1,10 @@
+name: svelte
+language: node
+homepage: https://svelte.dev/
+install: npx degit sveltejs/template helloworld
+generate: npm install
+run: npm run dev
+build: npm run build
+output: public
+resources: 
+ - https://svelte.dev/ 

@@ -1,0 +1,12 @@
+name: Express
+language: node
+homepage: https://expressjs.com/
+install: |
+  npx express-generator helloworld
+  cd helloworld
+  npm install
+run: npm start
+resources: 
+ - https://expressjs.com/en/starter/generator.html 
+
+
