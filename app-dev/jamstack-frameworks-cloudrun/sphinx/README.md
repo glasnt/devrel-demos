@@ -1,9 +1,9 @@
-# Running sphinx on Cloud Run
+# Running Sphinx on Cloud Run
 
-<!--- Generated 2022-08-24 05:21:43.330497 -->
+<!--- Generated 2022-08-24 05:34:09.495904 -->
 
-To deploy a [sphinx](https://www.sphinx-doc.org) application to Cloud Run, you will need an application
-based on this framework. This demo gets you to use the sphinx template to generate one. 
+To deploy a [Sphinx](https://www.sphinx-doc.org) application to Cloud Run, you will need an application
+based on this framework. This demo gets you to use the Sphinx template to generate one. 
 
 This requires [python3](https://cloud.google.com/python/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install). 
 
@@ -83,7 +83,7 @@ sphinx-autobuild . _build
 
 Your service will now be deployed at the URL in the deployment output.
 
-![Example sphinx deployment](example.png)
+![Example Sphinx deployment](example.png)
 
 ## Learn more
 

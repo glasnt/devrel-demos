@@ -1,4 +1,4 @@
-name: svelte
+name: Svelte
 language: node
 homepage: https://svelte.dev/
 install: npx degit sveltejs/template helloworld

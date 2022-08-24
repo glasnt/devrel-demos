@@ -1,4 +1,4 @@
-name: sphinx
+name: Sphinx
 homepage: https://www.sphinx-doc.org
 language: python
 install: pip install sphinx

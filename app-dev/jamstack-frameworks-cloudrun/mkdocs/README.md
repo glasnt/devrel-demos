@@ -1,9 +1,9 @@
-# Running mkdocs on Cloud Run
+# Running MKDocs on Cloud Run
 
-<!--- Generated 2022-08-24 05:21:43.324414 -->
+<!--- Generated 2022-08-24 05:34:09.486811 -->
 
-To deploy a [mkdocs](https://www.mkdocs.org/) application to Cloud Run, you will need an application
-based on this framework. This demo gets you to use the mkdocs template to generate one. 
+To deploy a [MKDocs](https://www.mkdocs.org/) application to Cloud Run, you will need an application
+based on this framework. This demo gets you to use the MKDocs template to generate one. 
 
 This requires [python3](https://cloud.google.com/python/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install). 
 
@@ -77,7 +77,7 @@ For python applications, you have specify what you want the web process to run u
 
 Your service will now be deployed at the URL in the deployment output.
 
-![Example mkdocs deployment](example.png)
+![Example MKDocs deployment](example.png)
 
 ## Learn more
 

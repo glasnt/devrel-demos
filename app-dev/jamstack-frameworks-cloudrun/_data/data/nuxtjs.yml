@@ -1,4 +1,4 @@
-name: nuxtjs
+name: Nuxtjs
 homepage: https://nuxtjs.org/
 language: node
 install:  | 
@@ -10,7 +10,6 @@ output: .
 resources: 
   - https://nuxtjs.org/docs/get-started/installation
   - https://nuxtjs.org/docs/get-started/commands
-
 
 ignore_gcloud: '\!.next/'
 deploy_extra: --port 3000 --set-env-vars HOST=0.0.0.0

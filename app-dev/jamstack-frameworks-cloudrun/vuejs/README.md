@@ -1,11 +1,11 @@
-# Running vuejs on Cloud Run
+# Running VueJS on Cloud Run
 
-<!--- Generated 2022-08-24 05:21:43.335119 -->
+<!--- Generated 2022-08-24 05:34:09.498732 -->
 
-To deploy a [vuejs](https://vuejs.org/) application to Cloud Run, you will need an application
-based on this framework. This demo gets you to use the vuejs template to generate one. 
+To deploy a [VueJS](https://vuejs.org/) application to Cloud Run, you will need an application
+based on this framework. This demo gets you to use the VueJS template to generate one. 
 
-This requires , and [gcloud](https://cloud.google.com/sdk/docs/install). 
+This requires [node, npm](https://cloud.google.com/nodejs/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install). 
 
 ### Create template application
 
@@ -49,8 +49,11 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
+For Node applications, it will automatically run `npm start` as the entrypoint if no other command is defined. 
 
-For  applications, you have specify what you want the web process to run using a `Procfile`. 
+
+
+You can override this using a `Procfile`. 
 
 * Create a new file called `Procfile` with the following contents: 
 
@@ -80,7 +83,7 @@ For  applications, you have specify what you want the web process to run using a
 
 Your service will now be deployed at the URL in the deployment output.
 
-![Example vuejs deployment](example.png)
+![Example VueJS deployment](example.png)
 
 ## Learn more
 

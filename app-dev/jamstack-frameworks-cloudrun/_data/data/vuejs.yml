@@ -1,4 +1,5 @@
-name: vuejs
+name: VueJS
+language: node
 homepage: https://vuejs.org/
 install: npm init vue@latest
 generate: |

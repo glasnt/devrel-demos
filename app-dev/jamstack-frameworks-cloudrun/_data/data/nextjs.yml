@@ -1,4 +1,4 @@
-name: nextjs
+name: NextJS
 language: node
 homepage: https://nextjs.org/
 install: npx create-next-app@latest helloworld

@@ -1,4 +1,4 @@
-name: jekyll
+name: Jekyll
 homepage: https://jekyllrb.com/
 language: ruby
 install: gem install bundler jekyll

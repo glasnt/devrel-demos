@@ -1,4 +1,4 @@
-name: mkdocs
+name: MKDocs
 language: python
 homepage: https://www.mkdocs.org/
 install: pip install mkdocs

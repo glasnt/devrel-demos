@@ -1,9 +1,9 @@
-# Running nextjs on Cloud Run
+# Running NextJS on Cloud Run
 
-<!--- Generated 2022-08-24 05:21:43.342598 -->
+<!--- Generated 2022-08-24 05:34:09.488304 -->
 
-To deploy a [nextjs](https://nextjs.org/) application to Cloud Run, you will need an application
-based on this framework. This demo gets you to use the nextjs template to generate one. 
+To deploy a [NextJS](https://nextjs.org/) application to Cloud Run, you will need an application
+based on this framework. This demo gets you to use the NextJS template to generate one. 
 
 This requires [node, npm](https://cloud.google.com/nodejs/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install). 
 
@@ -55,7 +55,7 @@ You can override this using a `Procfile`.
 
 
 
-To ensure the Cloud Run deployment doesn't ignore nextjs's hidden folder, make sure it's 
+To ensure the Cloud Run deployment doesn't ignore NextJS's hidden folder, make sure it's 
 explicitly included: 
 
     ```bash
@@ -81,7 +81,7 @@ explicitly included:
 
 Your service will now be deployed at the URL in the deployment output.
 
-![Example nextjs deployment](example.png)
+![Example NextJS deployment](example.png)
 
 ## Learn more
 

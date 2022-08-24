@@ -1,9 +1,9 @@
-# Running gatsby on Cloud Run
+# Running Gatsby on Cloud Run
 
-<!--- Generated 2022-08-24 05:21:43.339105 -->
+<!--- Generated 2022-08-24 05:34:09.479097 -->
 
-To deploy a [gatsby](https://www.gatsbyjs.com/) application to Cloud Run, you will need an application
-based on this framework. This demo gets you to use the gatsby template to generate one. 
+To deploy a [Gatsby](https://www.gatsbyjs.com/) application to Cloud Run, you will need an application
+based on this framework. This demo gets you to use the Gatsby template to generate one. 
 
 This requires [node, npm](https://cloud.google.com/nodejs/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install). 
 
@@ -76,7 +76,7 @@ You can override this using a `Procfile`.
 
 Your service will now be deployed at the URL in the deployment output.
 
-![Example gatsby deployment](example.png)
+![Example Gatsby deployment](example.png)
 
 ## Learn more
 

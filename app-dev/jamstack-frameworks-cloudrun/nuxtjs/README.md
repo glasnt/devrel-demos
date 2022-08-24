@@ -1,9 +1,9 @@
-# Running nuxtjs on Cloud Run
+# Running Nuxtjs on Cloud Run
 
-<!--- Generated 2022-08-24 05:21:43.328415 -->
+<!--- Generated 2022-08-24 05:34:09.489985 -->
 
-To deploy a [nuxtjs](https://nuxtjs.org/) application to Cloud Run, you will need an application
-based on this framework. This demo gets you to use the nuxtjs template to generate one. 
+To deploy a [Nuxtjs](https://nuxtjs.org/) application to Cloud Run, you will need an application
+based on this framework. This demo gets you to use the Nuxtjs template to generate one. 
 
 This requires [node, npm](https://cloud.google.com/nodejs/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install). 
 
@@ -57,7 +57,7 @@ You can override this using a `Procfile`.
 
 
 
-To ensure the Cloud Run deployment doesn't ignore nuxtjs's hidden folder, make sure it's 
+To ensure the Cloud Run deployment doesn't ignore Nuxtjs's hidden folder, make sure it's 
 explicitly included: 
 
     ```bash
@@ -84,7 +84,7 @@ explicitly included:
 
 Your service will now be deployed at the URL in the deployment output.
 
-![Example nuxtjs deployment](example.png)
+![Example Nuxtjs deployment](example.png)
 
 ## Learn more
 

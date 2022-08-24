@@ -1,6 +1,6 @@
 # Running Angular on Cloud Run
 
-<!--- Generated 2022-08-24 05:21:43.352757 -->
+<!--- Generated 2022-08-24 05:34:09.473871 -->
 
 To deploy a [Angular](https://angular.io/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Angular template to generate one. 

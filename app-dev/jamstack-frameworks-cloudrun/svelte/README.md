@@ -1,9 +1,9 @@
-# Running svelte on Cloud Run
+# Running Svelte on Cloud Run
 
-<!--- Generated 2022-08-24 05:21:43.326311 -->
+<!--- Generated 2022-08-24 05:34:09.497279 -->
 
-To deploy a [svelte](https://svelte.dev/) application to Cloud Run, you will need an application
-based on this framework. This demo gets you to use the svelte template to generate one. 
+To deploy a [Svelte](https://svelte.dev/) application to Cloud Run, you will need an application
+based on this framework. This demo gets you to use the Svelte template to generate one. 
 
 This requires [node, npm](https://cloud.google.com/nodejs/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install). 
 
@@ -80,7 +80,7 @@ You can override this using a `Procfile`.
 
 Your service will now be deployed at the URL in the deployment output.
 
-![Example svelte deployment](example.png)
+![Example Svelte deployment](example.png)
 
 ## Learn more
 

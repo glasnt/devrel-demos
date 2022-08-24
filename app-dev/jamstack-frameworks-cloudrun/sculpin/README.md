@@ -1,9 +1,9 @@
-# Running sculpin on Cloud Run
+# Running Sculpin on Cloud Run
 
-<!--- Generated 2022-08-24 05:21:43.344629 -->
+<!--- Generated 2022-08-24 05:34:09.494266 -->
 
-To deploy a [sculpin](https://sculpin.io) application to Cloud Run, you will need an application
-based on this framework. This demo gets you to use the sculpin template to generate one. 
+To deploy a [Sculpin](https://sculpin.io) application to Cloud Run, you will need an application
+based on this framework. This demo gets you to use the Sculpin template to generate one. 
 
 This requires , and [gcloud](https://cloud.google.com/sdk/docs/install). 
 
@@ -73,7 +73,7 @@ For php applications, you have specify what you want the web process to run usin
 
 Your service will now be deployed at the URL in the deployment output.
 
-![Example sculpin deployment](example.png)
+![Example Sculpin deployment](example.png)
 
 ## Learn more
 

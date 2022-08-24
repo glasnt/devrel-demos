@@ -1,4 +1,4 @@
-name: lektor
+name: Lektor
 homepage: https://www.getlektor.com
 language: python
 install: pip install lektor
