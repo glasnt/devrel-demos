@@ -1,6 +1,6 @@
 # Running Sculpin on Cloud Run
 
-<!--- Generated 2022-08-24 06:43:53.366858 -->
+<!--- Generated 2022-08-24 06:52:10.093771 -->
 
 To deploy a [Sculpin](https://sculpin.io) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Sculpin template to generate one. 

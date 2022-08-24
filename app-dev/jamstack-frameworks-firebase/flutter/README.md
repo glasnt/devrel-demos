@@ -1,6 +1,6 @@
 # Running Flutter on Firebase
 
-<!--- Generated 2022-08-24 06:43:53.339063 -->
+<!--- Generated 2022-08-24 06:52:10.067684 -->
 
 To deploy a [Flutter](https://flutter.dev/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Flutter template to generate one. 

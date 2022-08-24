@@ -1,6 +1,6 @@
 # Running MKDocs on Cloud Run
 
-<!--- Generated 2022-08-24 06:43:53.353766 -->
+<!--- Generated 2022-08-24 06:52:10.082946 -->
 
 To deploy a [MKDocs](https://www.mkdocs.org/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the MKDocs template to generate one. 

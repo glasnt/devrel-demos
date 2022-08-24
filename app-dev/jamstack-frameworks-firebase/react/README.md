@@ -1,6 +1,6 @@
 # Running React on Firebase
 
-<!--- Generated 2022-08-24 06:43:53.364306 -->
+<!--- Generated 2022-08-24 06:52:10.091859 -->
 
 To deploy a [React](https://reactjs.org/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the React template to generate one. 
