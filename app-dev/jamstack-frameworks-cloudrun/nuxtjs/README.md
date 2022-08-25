@@ -20,7 +20,7 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
     ```
 
     Choose defaults for all options, including "Deployment Target" (which will be "Server (Node.js hosting)")
-    Choose defaults for all options, except for "Deployment Target" (choose "Static (Static/Jamstack hosting)")
+    
 
 
 

@@ -30,8 +30,9 @@ To complete this demo, you will need a Firebase project. You can [create a new o
     ```bash
     {{ install | indent(4) }}
     ```
-    {% if install_cloudrun %}{{install_cloudrun}}{%endif%}
-    {% if install_firebase %}{{install_firebase}}{%endif%}
+
+    {% if platform == "Cloud Run" and install_cloudrun %}{{install_cloudrun}}{%endif%}
+    {% if platform == "Firebase" and install_firebase %}{{install_firebase}}{%endif%}
 
 * Create a new template application:
 
@@ -46,8 +47,8 @@ To complete this demo, you will need a Firebase project. You can [create a new o
     {{ install | indent(4)  }}
     ```
 
-    {% if install_cloudrun %}{{install_cloudrun}}{%endif%}
-    {% if install_firebase %}{{install_firebase}}{%endif%}
+    {% if platform == "Cloud Run" and install_cloudrun %}{{install_cloudrun}}{%endif%}
+    {% if platform == "Firebase" and install_firebase %}{{install_firebase}}{%endif%}
 
 {% endif %}
 
