@@ -54,19 +54,26 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
+For MKDocs, instead of using `mkdocs serve`, going to use a Node web server to serve the compiled files. 
 
+* Generate the application: 
 
-
-For python applications, you can specify what you want the web process to run using a `Procfile`. 
-
-* Create a new file called `Procfile` with the following contents: 
-
-    ```
-    web: mkdocs serve
+    ```bash
+    mkdocs build
     ```
 
+* Create a `package.json` in the `site` folder:
 
+    ```bash
+    cat <<EOF > site/package.json 
+    { 
+      "scripts": { "start": "http-server" },
+      "dependencies": { "http-server": "*" }
+    }
+    EOF
+    ```
 
+    *This is a scripting technique where all the text between `EOF` is written to the file.*
 
 
 
@@ -84,7 +91,7 @@ For python applications, you can specify what you want the web process to run us
 
     ```bash
     gcloud run deploy mkdocs-helloworld \
-        --source . \
+        --source site \
         --allow-unauthenticated 
     ```
 

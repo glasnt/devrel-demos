@@ -53,19 +53,26 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
+For JBake, instead of using `jbake -b -s`, going to use a Node web server to serve the compiled files. 
 
+* Generate the application: 
 
-
-For java applications, you can specify what you want the web process to run using a `Procfile`. 
-
-* Create a new file called `Procfile` with the following contents: 
-
-    ```
-    web: jbake -b -s
+    ```bash
+    jbake -b
     ```
 
+* Create a `package.json` in the `output` folder:
 
+    ```bash
+    cat <<EOF > output/package.json 
+    { 
+      "scripts": { "start": "http-server" },
+      "dependencies": { "http-server": "*" }
+    }
+    EOF
+    ```
 
+    *This is a scripting technique where all the text between `EOF` is written to the file.*
 
 
 
@@ -83,7 +90,7 @@ For java applications, you can specify what you want the web process to run usin
 
     ```bash
     gcloud run deploy jbake-helloworld \
-        --source . \
+        --source output \
         --allow-unauthenticated 
     ```
 

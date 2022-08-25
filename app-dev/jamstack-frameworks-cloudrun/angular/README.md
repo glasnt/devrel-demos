@@ -40,7 +40,7 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
 * Run the application locally:
 
     ```bash
-    npm run start
+    npm start
     ```
 
     
@@ -54,7 +54,7 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
-For Angular, instead of using `npm run start`, going to use a Node web server to serve the compiled files. 
+For Angular, instead of using `npm start`, going to use a Node web server to serve the compiled files. 
 
 * Generate the application: 
 
@@ -65,11 +65,18 @@ For Angular, instead of using `npm run start`, going to use a Node web server to
 * Create a `package.json` in the `dist/helloworld` folder:
 
     ```bash
+    cat <<EOF > dist/helloworld/package.json 
     { 
       "scripts": { "start": "http-server" },
       "dependencies": { "http-server": "*" }
     }
+    EOF
     ```
+
+    *This is a scripting technique where all the text between `EOF` is written to the file.*
+
+
+
 
 
 ## Deploy to Cloud Run

@@ -64,13 +64,15 @@ You can override this using a `Procfile`.
 
 
 
-
 * To ensure the Cloud Run deployment doesn't ignore NextJS's hidden folder, make sure it's 
 explicitly included: 
 
     ```bash
     echo "\!.next/" >> .gcloudignore
     ```
+
+
+
 
 
 

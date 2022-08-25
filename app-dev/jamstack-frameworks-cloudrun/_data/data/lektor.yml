@@ -10,3 +10,5 @@ build: lektor build -O output
 output: output
 resources: 
  - https://www.getlektor.com/docs/quickstart/ 
+
+cloudrun_fileserver: true

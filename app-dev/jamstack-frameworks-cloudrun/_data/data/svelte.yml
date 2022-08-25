@@ -10,3 +10,5 @@ build: npm run build
 output: public
 resources: 
  - https://svelte.dev/ 
+
+cloudrun_fileserver: true

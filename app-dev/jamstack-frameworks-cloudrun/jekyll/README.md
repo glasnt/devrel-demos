@@ -52,19 +52,26 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
+For Jekyll, instead of using `bundle exec jekyll serve`, going to use a Node web server to serve the compiled files. 
 
+* Generate the application: 
 
-
-For ruby applications, you can specify what you want the web process to run using a `Procfile`. 
-
-* Create a new file called `Procfile` with the following contents: 
-
-    ```
-    web: bundle exec jekyll serve
+    ```bash
+    bundle exec jekyll build
     ```
 
+* Create a `package.json` in the `_site` folder:
 
+    ```bash
+    cat <<EOF > _site/package.json 
+    { 
+      "scripts": { "start": "http-server" },
+      "dependencies": { "http-server": "*" }
+    }
+    EOF
+    ```
 
+    *This is a scripting technique where all the text between `EOF` is written to the file.*
 
 
 
@@ -82,7 +89,7 @@ For ruby applications, you can specify what you want the web process to run usin
 
     ```bash
     gcloud run deploy jekyll-helloworld \
-        --source . \
+        --source _site \
         --allow-unauthenticated 
     ```
 

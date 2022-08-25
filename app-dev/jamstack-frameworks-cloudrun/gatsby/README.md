@@ -36,7 +36,7 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
 * Run the application locally:
 
     ```bash
-    npm run start
+    npm start
     ```
 
     
@@ -50,22 +50,26 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
+For Gatsby, instead of using `npm start`, going to use a Node web server to serve the compiled files. 
 
+* Generate the application: 
 
-For Node applications, it will automatically run `npm start` as the entrypoint if no other command is defined. 
-
-
-
-You can override this using a `Procfile`. 
-
-* Create a new file called `Procfile` with the following contents: 
-
-    ```
-    web: npm run start
+    ```bash
+    npm run build
     ```
 
+* Create a `package.json` in the `public` folder:
 
+    ```bash
+    cat <<EOF > public/package.json 
+    { 
+      "scripts": { "start": "http-server" },
+      "dependencies": { "http-server": "*" }
+    }
+    EOF
+    ```
 
+    *This is a scripting technique where all the text between `EOF` is written to the file.*
 
 
 
@@ -83,7 +87,7 @@ You can override this using a `Procfile`.
 
     ```bash
     gcloud run deploy gatsby-helloworld \
-        --source . \
+        --source public \
         --allow-unauthenticated 
     ```
 

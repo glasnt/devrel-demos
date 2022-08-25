@@ -31,8 +31,8 @@ To complete this demo, you will need a Firebase project. You can [create a new o
     {{ install | indent(4) }}
     ```
 
-    {% if platform == "Cloud Run" and install_cloudrun %}{{install_cloudrun}}{%endif%}
-    {% if platform == "Firebase" and install_firebase %}{{install_firebase}}{%endif%}
+    {% if platform == "Cloud Run" and cloudrun_install %}{{cloudrun_install}}{%endif%}
+    {% if platform == "Firebase" and firebase_install %}{{firebase_install}}{%endif%}
 
 * Create a new template application:
 
@@ -47,8 +47,8 @@ To complete this demo, you will need a Firebase project. You can [create a new o
     {{ install | indent(4)  }}
     ```
 
-    {% if platform == "Cloud Run" and install_cloudrun %}{{install_cloudrun}}{%endif%}
-    {% if platform == "Firebase" and install_firebase %}{{install_firebase}}{%endif%}
+    {% if platform == "Cloud Run" and cloudrun_install %}{{cloudrun_install}}{%endif%}
+    {% if platform == "Firebase" and firebase_install %}{{firebase_install}}{%endif%}
 
 {% endif %}
 
@@ -75,7 +75,7 @@ To complete this demo, you will need a Firebase project. You can [create a new o
 Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks), 
 the base language is automatically identified.
 
-{% if fileserver_cloudrun %}
+{% if cloudrun_fileserver %}
 For {{name}}, instead of using `{{run}}`, going to use a Node web server to serve the compiled files. 
 
 * Generate the application: 
@@ -87,11 +87,15 @@ For {{name}}, instead of using `{{run}}`, going to use a Node web server to serv
 * Create a `package.json` in the `{{output}}` folder:
 
     ```bash
+    cat <<EOF > {{output}}/package.json 
     { 
       "scripts": { "start": "http-server" },
       "dependencies": { "http-server": "*" }
     }
+    EOF
     ```
+
+    *This is a scripting technique where all the text between `EOF` is written to the file.*
 {% else %}
 
 {% if language == "node" %}
@@ -119,8 +123,8 @@ For {{language}} applications, you can specify what you want the web process to 
     web: {%if deploy%}{{deploy}}{%else%}{{ run }}{%endif%}
     ```
 
-{% endif %}
 
+{% endif %}
 {% if ignore_gcloud %}
 * To ensure the Cloud Run deployment doesn't ignore {{ name }}'s hidden folder, make sure it's 
 explicitly included: 
@@ -130,6 +134,17 @@ explicitly included:
     ```
 {% endif %}
 
+
+{% endif %}
+
+
+{% if cloudrun_dependency %}
+
+* Create a file to install the {{language}} dependencies: 
+
+    ```bash
+    {{cloudrun_dependency}}
+    ```
 
 {% endif %}
 
@@ -145,9 +160,9 @@ explicitly included:
 
     ```bash
     gcloud run deploy {{ name.lower() }}-helloworld \
-        --source {% if fileserver_cloudrun %}{{output}}{%else%}.{%endif%} \
+        --source {% if cloudrun_fileserver %}{{output}}{%else%}.{%endif%} \
         --allow-unauthenticated {% if deploy_extra %}\
-        {{deploy}}{%endif%}
+        {{deploy_extra}}{%endif%}
     ```
 
     Type "Y" for all suggested operations.

@@ -48,22 +48,26 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
+For Preact, instead of using `npm run dev`, going to use a Node web server to serve the compiled files. 
 
+* Generate the application: 
 
-For Node applications, it will automatically run `npm start` as the entrypoint if no other command is defined. 
-
-
-
-You can override this using a `Procfile`. 
-
-* Create a new file called `Procfile` with the following contents: 
-
-    ```
-    web: npm run dev
+    ```bash
+    npm run build
     ```
 
+* Create a `package.json` in the `build` folder:
 
+    ```bash
+    cat <<EOF > build/package.json 
+    { 
+      "scripts": { "start": "http-server" },
+      "dependencies": { "http-server": "*" }
+    }
+    EOF
+    ```
 
+    *This is a scripting technique where all the text between `EOF` is written to the file.*
 
 
 
@@ -81,7 +85,7 @@ You can override this using a `Procfile`.
 
     ```bash
     gcloud run deploy preact-helloworld \
-        --source . \
+        --source build \
         --allow-unauthenticated 
     ```
 

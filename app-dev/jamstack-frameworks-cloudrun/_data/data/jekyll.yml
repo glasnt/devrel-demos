@@ -13,3 +13,5 @@ output: _site
 resources: 
  - https://jekyllrb.com/docs/
  - https://jekyllrb.com/docs/usage/ 
+
+cloudrun_fileserver: true

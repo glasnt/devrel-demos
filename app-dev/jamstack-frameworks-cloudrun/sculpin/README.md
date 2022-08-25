@@ -50,19 +50,26 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
+For Sculpin, instead of using `vendor/bin/sculpin generate --watch --server`, going to use a Node web server to serve the compiled files. 
 
+* Generate the application: 
 
-
-For php applications, you can specify what you want the web process to run using a `Procfile`. 
-
-* Create a new file called `Procfile` with the following contents: 
-
-    ```
-    web: vendor/bin/sculpin generate --watch --server
+    ```bash
+    vendor/bin/sculpin generate
     ```
 
+* Create a `package.json` in the `output_dev` folder:
 
+    ```bash
+    cat <<EOF > output_dev/package.json 
+    { 
+      "scripts": { "start": "http-server" },
+      "dependencies": { "http-server": "*" }
+    }
+    EOF
+    ```
 
+    *This is a scripting technique where all the text between `EOF` is written to the file.*
 
 
 
@@ -80,7 +87,7 @@ For php applications, you can specify what you want the web process to run using
 
     ```bash
     gcloud run deploy sculpin-helloworld \
-        --source . \
+        --source output_dev \
         --allow-unauthenticated 
     ```
 

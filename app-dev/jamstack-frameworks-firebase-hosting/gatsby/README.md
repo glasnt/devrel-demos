@@ -36,7 +36,7 @@ To complete this demo, you will need a Firebase project. You can [create a new o
 * Run the application locally:
 
     ```bash
-    npm run start
+    npm start
     ```
 
     

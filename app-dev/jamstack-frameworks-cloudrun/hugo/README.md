@@ -67,11 +67,18 @@ For Hugo, instead of using `hugo serve -D`, going to use a Node web server to se
 * Create a `package.json` in the `public` folder:
 
     ```bash
+    cat <<EOF > public/package.json 
     { 
       "scripts": { "start": "http-server" },
       "dependencies": { "http-server": "*" }
     }
+    EOF
     ```
+
+    *This is a scripting technique where all the text between `EOF` is written to the file.*
+
+
+
 
 
 ## Deploy to Cloud Run

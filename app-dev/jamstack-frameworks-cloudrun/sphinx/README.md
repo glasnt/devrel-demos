@@ -56,19 +56,26 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
+For Sphinx, instead of using `sphinx-autobuild . _build`, going to use a Node web server to serve the compiled files. 
 
+* Generate the application: 
 
-
-For python applications, you can specify what you want the web process to run using a `Procfile`. 
-
-* Create a new file called `Procfile` with the following contents: 
-
-    ```
-    web: sphinx-autobuild . _build
+    ```bash
+    make html
     ```
 
+* Create a `package.json` in the `_build/html` folder:
 
+    ```bash
+    cat <<EOF > _build/html/package.json 
+    { 
+      "scripts": { "start": "http-server" },
+      "dependencies": { "http-server": "*" }
+    }
+    EOF
+    ```
 
+    *This is a scripting technique where all the text between `EOF` is written to the file.*
 
 
 
@@ -86,7 +93,7 @@ For python applications, you can specify what you want the web process to run us
 
     ```bash
     gcloud run deploy sphinx-helloworld \
-        --source . \
+        --source _build/html \
         --allow-unauthenticated 
     ```
 

@@ -10,5 +10,6 @@ generate: |
 run: jbake -b -s
 build: jbake -b 
 output: output
+cloudrun_fileserver: true
 resources: 
  - https://jbake.org/

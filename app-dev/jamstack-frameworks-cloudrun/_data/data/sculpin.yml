@@ -9,3 +9,5 @@ build: vendor/bin/sculpin generate
 output: output_dev
 resources: 
  - https://sculpin.io/getstarted/ 
+
+cloudrun_fileserver: true

@@ -13,3 +13,4 @@ resources:
  - https://vuejs.org/guide/quick-start.html 
  - https://vuejs.org/guide/best-practices/production-deployment.html 
 
+cloudrun_fileserver: true

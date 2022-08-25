@@ -1,9 +1,9 @@
-# Running Lektor on Cloud Run
+# Running Flutter on Cloud Run
 
-To deploy a [Lektor](https://www.getlektor.com) application to Cloud Run, you will need an application
-based on this framework. This demo gets you to use the Lektor template to generate one. 
+To deploy a [Flutter](https://flutter.dev/) application to Cloud Run, you will need an application
+based on this framework. This demo gets you to use the Flutter template to generate one. 
 
-This requires [python3](https://cloud.google.com/python/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install).
+This requires Flutter, and [gcloud](https://cloud.google.com/sdk/docs/install).
 
 
 
@@ -16,7 +16,8 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
 * Install the framework:
 
     ```bash
-    pip install lektor
+    # https://docs.flutter.dev/get-started/install
+
     ```
 
     
@@ -25,24 +26,19 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
 * Create a new template application:
 
     ```bash
-    lektor quickstart
-    # enter "helloworld" for project name, and accept all other defaults. 
+    flutter create helloworld
+    cd helloworld
+    flutter devices
 
     ```
 
 
 
-
-* Navigate to the created project:
-
-    ```bash
-    cd helloworld/
-    ```
 
 * Run the application locally:
 
     ```bash
-    lektor server
+    flutter run
     ```
 
     
@@ -56,18 +52,18 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
-For Lektor, instead of using `lektor server`, going to use a Node web server to serve the compiled files. 
+For Flutter, instead of using `flutter run`, going to use a Node web server to serve the compiled files. 
 
 * Generate the application: 
 
     ```bash
-    lektor build -O output
+    flutter build web
     ```
 
-* Create a `package.json` in the `output` folder:
+* Create a `package.json` in the `build/web` folder:
 
     ```bash
-    cat <<EOF > output/package.json 
+    cat <<EOF > build/web/package.json 
     { 
       "scripts": { "start": "http-server" },
       "dependencies": { "http-server": "*" }
@@ -92,8 +88,8 @@ For Lektor, instead of using `lektor server`, going to use a Node web server to 
 * Build and deploy the service to Cloud Run: 
 
     ```bash
-    gcloud run deploy lektor-helloworld \
-        --source output \
+    gcloud run deploy flutter-helloworld \
+        --source build/web \
         --allow-unauthenticated 
     ```
 
@@ -102,7 +98,7 @@ For Lektor, instead of using `lektor server`, going to use a Node web server to 
 
 Your service will now be deployed at the URL in the deployment output.
 
-![Example Lektor deployment](example.png)
+![Example Flutter deployment](example.png)
 
 
 
@@ -112,4 +108,4 @@ Your service will now be deployed at the URL in the deployment output.
 
 Resources: 
 
-- https://www.getlektor.com/docs/quickstart/
+- https://docs.flutter.dev/get-started/web

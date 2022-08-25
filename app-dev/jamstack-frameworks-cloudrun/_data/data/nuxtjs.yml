@@ -2,8 +2,8 @@ name: Nuxtjs
 homepage: https://nuxtjs.org/
 language: node
 install: npx create-nuxt-app helloworld
-install_cloudrun: Choose defaults for all options, including "Deployment Target" (which will be "Server (Node.js hosting)")
-install_firebase: Choose defaults for all options, except for "Deployment Target" (choose "Static (Static/Jamstack hosting)")
+cloudrun_install: Choose defaults for all options, including "Deployment Target" (which will be "Server (Node.js hosting)")
+firebase_install: Choose defaults for all options, except for "Deployment Target" (choose "Static (Static/Jamstack hosting)")
 
 run: npm run dev
 build: npm run generate

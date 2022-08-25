@@ -64,13 +64,15 @@ You can override this using a `Procfile`.
 
 
 
-
 * To ensure the Cloud Run deployment doesn't ignore Nuxtjs's hidden folder, make sure it's 
 explicitly included: 
 
     ```bash
     echo "\!.next/" >> .gcloudignore
     ```
+
+
+
 
 
 
@@ -90,7 +92,7 @@ explicitly included:
     gcloud run deploy nuxtjs-helloworld \
         --source . \
         --allow-unauthenticated \
-        
+        --port 3000 --set-env-vars HOST=0.0.0.0
     ```
 
     Type "Y" for all suggested operations.

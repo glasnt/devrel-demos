@@ -8,3 +8,5 @@ build: mkdocs build
 output: site
 resources: 
   - https://www.mkdocs.org/getting-started/ 
+
+cloudrun_fileserver: true
