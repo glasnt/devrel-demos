@@ -1,7 +1,9 @@
 name: Svelte
 language: node
 homepage: https://svelte.dev/
-install: npx degit sveltejs/template helloworld
+install: |
+  npx degit sveltejs/template helloworld
+  cd helloworld
 generate: npm install
 run: npm run dev
 build: npm run build

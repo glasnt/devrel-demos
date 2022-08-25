@@ -6,8 +6,8 @@ install_cloudrun: Choose defaults for all options, including "Deployment Target"
 install_firebase: Choose defaults for all options, except for "Deployment Target" (choose "Static (Static/Jamstack hosting)")
 
 run: npm run dev
-build: npm run build
-output: .
+build: npm run generate
+output: dist
 resources: 
   - https://nuxtjs.org/docs/get-started/installation
   - https://nuxtjs.org/docs/get-started/commands

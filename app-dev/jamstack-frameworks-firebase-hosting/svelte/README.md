@@ -17,6 +17,8 @@ To complete this demo, you will need a Firebase project. You can [create a new o
 
     ```bash
     npx degit sveltejs/template helloworld
+    cd helloworld
+
     ```
 
     
@@ -30,12 +32,6 @@ To complete this demo, you will need a Firebase project. You can [create a new o
 
 
 
-
-* Navigate to the created project:
-
-    ```bash
-    cd helloworld/
-    ```
 
 * Run the application locally:
 
@@ -64,8 +60,8 @@ To complete this demo, you will need a Firebase project. You can [create a new o
     firebase init hosting
     ```
 
-    * In "Project Setup", select the Google Cloud project you configured earlier.
-    * For "What do you want to use as your public directory", enter `public`.
+    * In "Project Setup", select the project you configured earlier.
+    * For "What do you want to use as your public directory", enter **`public`**.
     * Choose the default for all other options.
 
 * Deploy to Firebase: 
