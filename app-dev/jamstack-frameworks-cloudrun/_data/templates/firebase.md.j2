@@ -1,4 +1,4 @@
-# Firebase Jamstack Examples
+# Firebase Hosting Jamstack Examples
 
 This demo shows an example of how to deploy some of the popular [Node frameworks](https://jamstack.org/survey/2021/#choices-frameworks) to Firebase. 
 
