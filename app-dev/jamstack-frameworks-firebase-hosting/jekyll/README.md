@@ -6,6 +6,11 @@ based on this framework. This demo gets you to use the Jekyll template to genera
 This requires , and [firebase](https://cloud.google.com/firestore/docs/client/get-firebase).
 
 
+
+To complete this demo, you will need a Firebase project.
+You can [create a new one](https://console.firebase.google.com/u/0/?pli=1), or connect an existing [Google Cloud project](https://cloud.google.com/firestore/docs/client/get-firebase). You can also 
+
+
 ### Create template application
 
 
@@ -57,6 +62,8 @@ This requires , and [firebase](https://cloud.google.com/firestore/docs/client/ge
     firebase init hosting
     # Choose "_site" for the "public directory".
     ```
+
+    Select the Google Cloud project you configured earlier.
 
 * Deploy to Firebase: 
 

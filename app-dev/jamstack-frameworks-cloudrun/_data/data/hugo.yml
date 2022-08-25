@@ -5,6 +5,7 @@ install: |
   # https://gohugo.io/getting-started/installing
 generate: |
   hugo new site helloworld
+  cd helloworld/
   hugo new posts/hello.md
   git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
   echo theme = \"ananke\" >> config.toml

@@ -15,6 +15,13 @@ if platform == "Cloud Run" %}, and [gcloud](https://cloud.google.com/sdk/docs/in
 {%elif platform == "Firebase"%}, and [firebase](https://cloud.google.com/firestore/docs/client/get-firebase).
 {%endif%}
 
+{% if platform == "Cloud Run" %}
+To complete this demo, you will need a [Google Cloud project](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project). 
+{%elif platform == "Firebase"%}
+To complete this demo, you will need a Firebase project.
+You can [create a new one](https://console.firebase.google.com/u/0/?pli=1), or connect an existing [Google Cloud project](https://cloud.google.com/firestore/docs/client/get-firebase). You can also 
+{% endif %}
+
 ### Create template application
 
 {% if generate %}
@@ -101,8 +108,13 @@ explicitly included:
 
 ## Deploy to Cloud Run
 
-* Build and deploy the service to Cloud Run: 
+* Set the project you created earlier in `gcloud`: 
 
+    ```bash
+    gcloud config set project MYPROJECT
+    ```
+
+* Build and deploy the service to Cloud Run: 
 
     ```bash
     gcloud run deploy {{ name.lower() }}-helloworld \
@@ -135,6 +147,8 @@ Your service will now be deployed at the URL in the deployment output.
     firebase init hosting
     # Choose "{{output}}" for the "public directory".
     ```
+
+    Select the Google Cloud project you configured earlier.
 
 * Deploy to Firebase: 
 
