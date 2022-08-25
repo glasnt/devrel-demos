@@ -56,18 +56,22 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
+For Hugo, instead of using `hugo serve -D`, going to use a Node web server to serve the compiled files. 
 
-For go applications, you can specify what you want the web process to run using a `Procfile`. 
+* Generate the application: 
 
-* Create a new file called `Procfile` with the following contents: 
-
+    ```bash
+    hugo -D
     ```
-    web: hugo serve -D
+
+* Create a `package.json` in the `public` folder:
+
+    ```bash
+    { 
+      "scripts": { "start": "http-server" },
+      "dependencies": { "http-server": "*" }
+    }
     ```
-
-
-
-
 
 
 ## Deploy to Cloud Run
@@ -82,7 +86,7 @@ For go applications, you can specify what you want the web process to run using 
 
     ```bash
     gcloud run deploy hugo-helloworld \
-        --source . \
+        --source public \
         --allow-unauthenticated 
     ```
 

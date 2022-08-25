@@ -75,6 +75,25 @@ To complete this demo, you will need a Firebase project. You can [create a new o
 Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks), 
 the base language is automatically identified.
 
+{% if fileserver_cloudrun %}
+For {{name}}, instead of using `{{run}}`, going to use a Node web server to serve the compiled files. 
+
+* Generate the application: 
+
+    ```bash
+    {{ build }}
+    ```
+
+* Create a `package.json` in the `{{output}}` folder:
+
+    ```bash
+    { 
+      "scripts": { "start": "http-server" },
+      "dependencies": { "http-server": "*" }
+    }
+    ```
+{% else %}
+
 {% if language == "node" %}
 For Node applications, it will automatically run `npm start` as the entrypoint if no other command is defined. 
 
@@ -97,7 +116,7 @@ For {{language}} applications, you can specify what you want the web process to 
 * Create a new file called `Procfile` with the following contents: 
 
     ```
-    web: {{ run }}
+    web: {%if deploy%}{{deploy}}{%else%}{{ run }}{%endif%}
     ```
 
 {% endif %}
@@ -112,6 +131,8 @@ explicitly included:
 {% endif %}
 
 
+{% endif %}
+
 ## Deploy to Cloud Run
 
 * Set the project you created earlier in `gcloud`: 
@@ -124,7 +145,7 @@ explicitly included:
 
     ```bash
     gcloud run deploy {{ name.lower() }}-helloworld \
-        --source . \
+        --source {% if fileserver_cloudrun %}{{output}}{%else%}.{%endif%} \
         --allow-unauthenticated {% if deploy_extra %}\
         {{deploy}}{%endif%}
     ```

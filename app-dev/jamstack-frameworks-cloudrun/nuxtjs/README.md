@@ -48,6 +48,8 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
+
+
 For Node applications, it will automatically run `npm start` as the entrypoint if no other command is defined. 
 
 
@@ -69,6 +71,8 @@ explicitly included:
     ```bash
     echo "\!.next/" >> .gcloudignore
     ```
+
+
 
 
 

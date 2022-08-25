@@ -6,6 +6,7 @@ generate: ng new helloworld
 run: npm run start
 build: ng build
 output: dist/helloworld
+fileserver_cloudrun: true
 resources: 
  - https://angular.io/tutorial/toh-pt0
  - https://angular.io/start/start-deployment 

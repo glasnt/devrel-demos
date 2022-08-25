@@ -54,21 +54,22 @@ Using [Cloud Buildpacks](https://github.com/GoogleCloudPlatform/buildpacks),
 the base language is automatically identified.
 
 
-For Node applications, it will automatically run `npm start` as the entrypoint if no other command is defined. 
+For Angular, instead of using `npm run start`, going to use a Node web server to serve the compiled files. 
 
+* Generate the application: 
 
-
-You can override this using a `Procfile`. 
-
-* Create a new file called `Procfile` with the following contents: 
-
-    ```
-    web: npm run start
+    ```bash
+    ng build
     ```
 
+* Create a `package.json` in the `dist/helloworld` folder:
 
-
-
+    ```bash
+    { 
+      "scripts": { "start": "http-server" },
+      "dependencies": { "http-server": "*" }
+    }
+    ```
 
 
 ## Deploy to Cloud Run
@@ -83,7 +84,7 @@ You can override this using a `Procfile`.
 
     ```bash
     gcloud run deploy angular-helloworld \
-        --source . \
+        --source dist/helloworld \
         --allow-unauthenticated 
     ```
 

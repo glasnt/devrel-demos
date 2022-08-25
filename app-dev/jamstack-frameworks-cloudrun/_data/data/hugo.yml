@@ -14,5 +14,6 @@ generate: |
 run: hugo serve -D
 build: hugo -D
 output: public
+fileserver_cloudrun: true
 resources: 
  - https://gohugo.io/getting-started/quick-start/ 
