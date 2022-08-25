@@ -10,6 +10,7 @@ generate: |
 run: flutter run
 build: flutter build web
 output: build/web
+fileserver_cloudrun: true
 resources: 
  - https://docs.flutter.dev/get-started/web
 
