@@ -17,6 +17,9 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
 
     ```bash
     npm init vue@latest
+    # Use "helloworld" for the project name
+    # Press Enter for all other defaults. 
+
     ```
 
     
@@ -25,10 +28,7 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
 * Create a new template application:
 
     ```bash
-    # Use "helloworld" for the project name
-    # Press Enter for all other defaults. 
     npm install
-
     ```
 
 

@@ -17,6 +17,9 @@ To complete this demo, you will need a Firebase project. You can [create a new o
 
     ```bash
     npm init vue@latest
+    # Use "helloworld" for the project name
+    # Press Enter for all other defaults. 
+
     ```
 
     
@@ -25,10 +28,7 @@ To complete this demo, you will need a Firebase project. You can [create a new o
 * Create a new template application:
 
     ```bash
-    # Use "helloworld" for the project name
-    # Press Enter for all other defaults. 
     npm install
-
     ```
 
 
@@ -68,7 +68,7 @@ To complete this demo, you will need a Firebase project. You can [create a new o
     ```
 
     * In "Project Setup", select the project you configured earlier.
-    * For "What do you want to use as your public directory", enter **`dist/`**.
+    * For "What do you want to use as your public directory", enter "dist".
     * Choose the default for all other options.
 
 * Deploy to Firebase: 

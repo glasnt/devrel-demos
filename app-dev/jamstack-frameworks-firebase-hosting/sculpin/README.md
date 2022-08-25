@@ -61,7 +61,7 @@ To complete this demo, you will need a Firebase project. You can [create a new o
     ```
 
     * In "Project Setup", select the project you configured earlier.
-    * For "What do you want to use as your public directory", enter **`output_dev`**.
+    * For "What do you want to use as your public directory", enter "output_dev".
     * Choose the default for all other options.
 
 * Deploy to Firebase: 
