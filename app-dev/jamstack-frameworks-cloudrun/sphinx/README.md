@@ -18,6 +18,8 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
     ```bash
     pip install sphinx sphinx-autobuild
     ```
+    
+    
 
 * Create a new template application:
 

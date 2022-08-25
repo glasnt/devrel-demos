@@ -18,7 +18,6 @@ All frameworks are NodeJS based, unless otherwise marked.
  * [Jekyll](jekyll/) (ruby)
  * [Lektor](lektor/) (python)
  * [MKDocs](mkdocs/) (python)
- * [NextJS](nextjs/) 
  * [Nuxtjs](nuxtjs/) 
  * [Preact](preact/) 
  * [React](react/) 

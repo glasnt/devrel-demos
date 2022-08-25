@@ -11,3 +11,8 @@ resources:
 
 
 ignore_gcloud: '\!.next/'
+
+# The firebase export setup is too complex, currently broken. 
+# https://nextjs.org/docs/advanced-features/static-html-export 
+# "info  - No "exportPathMap" found"
+skip_firebase: true

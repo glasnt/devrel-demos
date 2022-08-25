@@ -18,6 +18,8 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
     ```bash
     pip install lektor
     ```
+    
+    
 
 * Create a new template application:
 

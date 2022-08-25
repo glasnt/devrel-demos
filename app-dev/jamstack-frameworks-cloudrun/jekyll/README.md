@@ -18,6 +18,8 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
     ```bash
     gem install bundler jekyll
     ```
+    
+    
 
 * Create a new template application:
 

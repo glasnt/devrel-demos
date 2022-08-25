@@ -18,6 +18,8 @@ To complete this demo, you will need a Firebase project. You can [create a new o
     ```bash
     gem install bundler jekyll
     ```
+    
+    
 
 * Create a new template application:
 
@@ -59,9 +61,9 @@ To complete this demo, you will need a Firebase project. You can [create a new o
     firebase init hosting
     ```
 
-    * Select the Google Cloud project you configured earlier.
-    * Choose "_site" for the "public directory".
-    * Chosoe the default for all other options.
+    * In "Project Setup", select the Google Cloud project you configured earlier.
+    * For "What do you want to use as your public directory", enter `_site`.
+    * Choose the default for all other options.
 
 * Deploy to Firebase: 
 
