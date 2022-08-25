@@ -2,7 +2,11 @@ name: Jekyll
 homepage: https://jekyllrb.com/
 language: ruby
 install: gem install bundler jekyll
-generate: jekyll new helloworld
+generate: |
+  jekyll new helloworld
+  cd helloworld
+  echo "gem 'webrick'" >> Gemfile
+  bundle install
 run: bundle exec jekyll serve
 build: bundle exec jekyll build
 output: _site

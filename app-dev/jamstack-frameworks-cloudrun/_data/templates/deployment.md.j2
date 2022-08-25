@@ -8,6 +8,7 @@ This requires {% if
 {%- elif language == "python" %}[python3](https://cloud.google.com/python/docs/setup)
 {%- elif language == "go" %}[go](https://cloud.google.com/go/docs/setup)
 {%- elif language == "php" %}[php](https://www.php.net/manual/en/install.php)
+{%- elif language == "ruby" %}[ruby](https://cloud.google.com/ruby/docs/setup)
 {%- elif language == "flutter" %}Flutter
 {%- elif language == "java" %}`java`
 {% endif %}{%
@@ -18,8 +19,7 @@ if platform == "Cloud Run" %}, and [gcloud](https://cloud.google.com/sdk/docs/in
 {% if platform == "Cloud Run" %}
 To complete this demo, you will need a [Google Cloud project](https://cloud.google.com/resource-manager/docs/creating-managing-projects#creating_a_project). 
 {%elif platform == "Firebase"%}
-To complete this demo, you will need a Firebase project.
-You can [create a new one](https://console.firebase.google.com/u/0/?pli=1), or connect an existing [Google Cloud project](https://cloud.google.com/firestore/docs/client/get-firebase). You can also 
+To complete this demo, you will need a Firebase project. You can [create a new one](https://console.firebase.google.com/u/0/?pli=1), or connect an existing [Google Cloud project](https://cloud.google.com/firestore/docs/client/get-firebase).
 {% endif %}
 
 ### Create template application

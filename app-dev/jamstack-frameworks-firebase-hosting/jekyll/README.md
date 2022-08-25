@@ -3,12 +3,11 @@
 To deploy a [Jekyll](https://jekyllrb.com/) application to Firebase, you will need an application
 based on this framework. This demo gets you to use the Jekyll template to generate one. 
 
-This requires , and [firebase](https://cloud.google.com/firestore/docs/client/get-firebase).
+This requires [ruby](https://cloud.google.com/ruby/docs/setup), and [firebase](https://cloud.google.com/firestore/docs/client/get-firebase).
 
 
 
-To complete this demo, you will need a Firebase project.
-You can [create a new one](https://console.firebase.google.com/u/0/?pli=1), or connect an existing [Google Cloud project](https://cloud.google.com/firestore/docs/client/get-firebase). You can also 
+To complete this demo, you will need a Firebase project. You can [create a new one](https://console.firebase.google.com/u/0/?pli=1), or connect an existing [Google Cloud project](https://cloud.google.com/firestore/docs/client/get-firebase).
 
 
 ### Create template application
@@ -24,16 +23,14 @@ You can [create a new one](https://console.firebase.google.com/u/0/?pli=1), or c
 
     ```bash
     jekyll new helloworld
+    cd helloworld
+    echo "gem 'webrick'" >> Gemfile
+    bundle install
+
     ```
 
 
 
-
-* Navigate to the created project:
-
-    ```bash
-    cd helloworld/
-    ```
 
 * Run the application locally:
 

@@ -39,3 +39,5 @@ with open(gcr_path / readme_md, "w") as f:
 
 with open(firebase_path / readme_md, "w") as f:
     f.write(firebase_readme.render(frameworks=firebase_framework_list))
+
+print(f"Wrote out {len(gcr_framework_list) + len(firebase_framework_list)} demos. ({len(gcr_framework_list)} for Cloud Run, { len(firebase_framework_list)} for Firebase Hosting)")

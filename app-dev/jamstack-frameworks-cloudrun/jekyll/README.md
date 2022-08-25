@@ -3,7 +3,7 @@
 To deploy a [Jekyll](https://jekyllrb.com/) application to Cloud Run, you will need an application
 based on this framework. This demo gets you to use the Jekyll template to generate one. 
 
-This requires , and [gcloud](https://cloud.google.com/sdk/docs/install).
+This requires [ruby](https://cloud.google.com/ruby/docs/setup), and [gcloud](https://cloud.google.com/sdk/docs/install).
 
 
 
@@ -23,16 +23,14 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
 
     ```bash
     jekyll new helloworld
+    cd helloworld
+    echo "gem 'webrick'" >> Gemfile
+    bundle install
+
     ```
 
 
 
-
-* Navigate to the created project:
-
-    ```bash
-    cd helloworld/
-    ```
 
 * Run the application locally:
 

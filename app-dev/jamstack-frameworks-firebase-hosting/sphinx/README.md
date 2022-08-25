@@ -7,8 +7,7 @@ This requires [python3](https://cloud.google.com/python/docs/setup), and [fireba
 
 
 
-To complete this demo, you will need a Firebase project.
-You can [create a new one](https://console.firebase.google.com/u/0/?pli=1), or connect an existing [Google Cloud project](https://cloud.google.com/firestore/docs/client/get-firebase). You can also 
+To complete this demo, you will need a Firebase project. You can [create a new one](https://console.firebase.google.com/u/0/?pli=1), or connect an existing [Google Cloud project](https://cloud.google.com/firestore/docs/client/get-firebase).
 
 
 ### Create template application
