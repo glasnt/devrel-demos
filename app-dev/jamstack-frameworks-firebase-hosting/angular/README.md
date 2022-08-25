@@ -60,16 +60,21 @@ You can [create a new one](https://console.firebase.google.com/u/0/?pli=1), or c
 
     ```bash
     firebase init hosting
-    # Choose "dist/helloworld" for the "public directory".
     ```
 
-    Select the Google Cloud project you configured earlier.
+    * Select the Google Cloud project you configured earlier.
+    * Choose "dist/helloworld" for the "public directory".
+    * Chosoe the default for all other options.
 
 * Deploy to Firebase: 
 
     ```bash
     firebase deploy --only hosting
     ```
+
+Your service will now be deployed at the URL in the output under "Hosting URL".
+
+![Example Angular deployment](example.png)
 
 
 

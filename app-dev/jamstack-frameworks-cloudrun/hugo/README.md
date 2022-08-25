@@ -26,6 +26,7 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
     hugo new site helloworld
     cd helloworld/
     hugo new posts/hello.md
+    git init .
     git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
     echo theme = \"ananke\" >> config.toml
     sed -i "" "s/true/false/g" content/posts/hello.md
