@@ -40,7 +40,7 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
 * Run the application locally:
 
     ```bash
-    ng serve --open
+    npm run start
     ```
 
     
@@ -63,7 +63,7 @@ You can override this using a `Procfile`.
 * Create a new file called `Procfile` with the following contents: 
 
     ```
-    web: ng serve --open
+    web: npm run start
     ```
 
 

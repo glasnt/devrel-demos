@@ -36,7 +36,7 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
 * Run the application locally:
 
     ```bash
-    npm run develop
+    npm run start
     ```
 
     
@@ -59,7 +59,7 @@ You can override this using a `Procfile`.
 * Create a new file called `Procfile` with the following contents: 
 
     ```
-    web: npm run develop
+    web: npm run start
     ```
 
 

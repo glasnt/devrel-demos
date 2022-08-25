@@ -40,7 +40,7 @@ To complete this demo, you will need a Firebase project. You can [create a new o
 * Run the application locally:
 
     ```bash
-    ng serve --open
+    npm run start
     ```
 
     

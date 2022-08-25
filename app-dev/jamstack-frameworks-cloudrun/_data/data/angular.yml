@@ -3,7 +3,7 @@ language: node
 homepage: https://angular.io/
 install: npm install -g @angular/cli
 generate: ng new helloworld
-run: ng serve --open
+run: npm run start
 build: ng build
 output: dist/helloworld
 resources: 
