@@ -33,12 +33,6 @@ To complete this demo, you will need a [Google Cloud project](https://cloud.goog
 
 
 
-* Navigate to the created project:
-
-    ```bash
-    cd helloworld/
-    ```
-
 * Run the application locally:
 
     ```bash

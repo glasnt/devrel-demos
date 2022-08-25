@@ -34,12 +34,6 @@ You can [create a new one](https://console.firebase.google.com/u/0/?pli=1), or c
 
 
 
-* Navigate to the created project:
-
-    ```bash
-    cd helloworld/
-    ```
-
 * Run the application locally:
 
     ```bash
